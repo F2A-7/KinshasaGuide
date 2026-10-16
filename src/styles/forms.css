@@ -1,0 +1,14 @@
+.page { padding-block: var(--space-8) 0; }
+.form { max-width: 36rem; margin-top: var(--space-6); }
+.form .btn { margin-top: var(--space-2); }
+.form-note { font-size: var(--text-sm); color: var(--color-text-muted); }
+.field__hint { margin: 0; font-size: var(--text-sm); color: var(--color-text-muted); }
+textarea.field__input { resize: vertical; font-family: inherit; }
+
+.trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

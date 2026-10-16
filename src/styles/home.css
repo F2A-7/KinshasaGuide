@@ -1,0 +1,46 @@
+.hero {
+  padding: var(--space-12) 0;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+.hero__lead { font-size: var(--text-lg); color: var(--color-text-muted); max-width: 40rem; }
+
+.search-bar { display: flex; flex-direction: column; gap: var(--space-3); max-width: 40rem; }
+.search-bar__input { width: 100%; }
+@media (min-width: 40rem) {
+  .search-bar { flex-direction: row; }
+  .search-bar__input { flex: 1; }
+}
+
+.section { padding-block: var(--space-8) 0; }
+
+.category-list, .chip-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.category-link {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  min-height: var(--tap-min); padding: 0 var(--space-4);
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); color: var(--color-text);
+  text-decoration: none; font-weight: 600;
+}
+.category-link:hover { border-color: var(--color-primary); background: var(--color-primary-soft); }
+
+.chip {
+  display: inline-flex; align-items: center; min-height: var(--tap-min);
+  padding: 0 var(--space-4); border-radius: var(--radius-md);
+  border: 1px solid var(--color-primary); color: var(--color-primary);
+  text-decoration: none; font-weight: 600;
+}
+.chip:hover { background: var(--color-primary-soft); }
+
+.grid { display: grid; gap: var(--space-4); grid-template-columns: 1fr; }
+@media (min-width: 40rem) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 64rem) { .grid { grid-template-columns: repeat(3, 1fr); } }
+
+.place-card { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); }
+.place-card__title { margin: 0; }
+.place-card__title a { color: var(--color-text); text-decoration: none; }
+.place-card__title a:hover { color: var(--color-primary); text-decoration: underline; }
+.place-card__meta { display: flex; align-items: center; gap: var(--space-1); margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+
+.home-note { margin-top: var(--space-4); font-size: var(--text-sm); color: var(--color-text-muted); }
+.cta { text-align: center; background: transparent; }

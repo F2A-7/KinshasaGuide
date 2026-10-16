@@ -1,0 +1,14 @@
+.explore { padding-block: var(--space-8) 0; }
+.explore__layout { display: grid; gap: var(--space-8); }
+.explore__count { font-size: var(--text-lg); }
+
+.filters { align-self: start; }
+.filters .btn { width: 100%; }
+
+@media (min-width: 56rem) {
+  .explore__layout { grid-template-columns: 16rem 1fr; }
+  .filters { position: sticky; top: 80px; }
+}
+
+.explore .grid { grid-template-columns: 1fr; }
+@media (min-width: 40rem) { .explore .grid { grid-template-columns: repeat(2, 1fr); } }

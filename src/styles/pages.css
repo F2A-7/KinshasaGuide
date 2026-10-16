@@ -1,0 +1,5 @@
+.prose { max-width: 42rem; }
+.prose__lead { font-size: var(--text-lg); color: var(--color-text-muted); }
+.prose h2 { margin-top: var(--space-8); }
+.prose ul { padding-left: var(--space-6); margin: 0 0 var(--space-4); }
+.prose li { margin-bottom: var(--space-2); }

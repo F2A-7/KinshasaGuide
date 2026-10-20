@@ -1,32 +1,26 @@
-# React + TypeScript + Vite
+# KinsGuide
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Prototype de guide web pour découvrir restaurants, hôtels, lieux à visiter et activités à Kinshasa.
 
-Currently, two official plugins are available:
+**Démo en ligne :** https://kinshasa-guide-sandy.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> Projet personnel de démonstration. Tous les établissements affichés sont fictifs (seules les communes sont réelles). Les formulaires ne transmettent aucune donnée.
 
-## React Compiler
+## Fonctionnalités
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Page d'accueil : recherche, catégories, communes, lieux recommandés
+- Page Explorer : recherche textuelle et filtres combinables (catégorie, commune, prix), filtres conservés dans l'adresse, compteur de résultats, état « aucun résultat »
+- Fiche détaillée : description, horaires, informations pratiques, lieux similaires
+- Formulaires « Proposer un établissement » et « Contact » avec validation (envoi simulé)
+- Pages À propos et 404
+- Accessibilité : navigation clavier, lien d'évitement, labels, focus visible
+- Design responsive, pensé d'abord pour le mobile
 
-## Expanding the Oxlint configuration
+## Stack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+React, TypeScript, Vite, React Router, lucide-react (icônes), Vitest (tests), CSS pur avec variables.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## Installation
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Prérequis : Node.js (version LTS recommandée) et Git.
+- Scores PageSpeed Insights (mobile) : Performance 99, Accessibilité 100, Bonnes pratiques 100, SEO 100
